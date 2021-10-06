@@ -15,7 +15,7 @@ public class MPPlayerMovement : NetworkBehaviour
     {
         mpCharController = GetComponent<CharacterController>();
         //Color Changing
-        if(IsLocalPlayer)
+        if(IsOwner)
         {
             GetComponent<MeshRenderer>().material.color = new Color(1, 0, 1, 1);
         }
@@ -31,7 +31,7 @@ public class MPPlayerMovement : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (IsLocalPlayer)
+        if (IsOwner)
         { 
             MPMovePlayer();
         }
