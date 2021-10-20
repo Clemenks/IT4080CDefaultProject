@@ -13,7 +13,7 @@ public class MPBulletSpawner : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") && IsLocalPlayer)
+        if (Input.GetButtonDown("Fire1") && IsOwner)
         {
             FireServerRpc();
         }

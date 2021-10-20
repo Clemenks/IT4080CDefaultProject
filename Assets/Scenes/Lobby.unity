@@ -205,7 +205,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 129960156}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 512674720}
+        m_TargetAssemblyTypeName: MPLobby, Assembly-CSharp
+        m_MethodName: ReadyButtonPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &129960156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -497,6 +509,7 @@ MonoBehaviour:
   - {fileID: 1460728296}
   - {fileID: 194843816}
   playerPrefab: {fileID: 7269184704417168236, guid: 60d898015bf421b4e88e0017fc971eb9, type: 3}
+  startGameButton: {fileID: 1082818490}
 --- !u!1 &535153993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1114,13 +1127,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 05e4cc6969c9a784bac7250350b0c755, type: 3}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 512674720}
+        m_TargetAssemblyTypeName: MPLobby, Assembly-CSharp
+        m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1273,6 +1286,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: LobbyPlayer 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7802984879640270489, guid: 681da8d641bb8fc4eae88edfc25f8881, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802984879640270489, guid: 681da8d641bb8fc4eae88edfc25f8881, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802984879640270489, guid: 681da8d641bb8fc4eae88edfc25f8881, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 512674714}
+    - target: {fileID: 7802984879640270489, guid: 681da8d641bb8fc4eae88edfc25f8881, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802984879640270489, guid: 681da8d641bb8fc4eae88edfc25f8881, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 681da8d641bb8fc4eae88edfc25f8881, type: 3}
 --- !u!224 &1460728295 stripped
@@ -1321,6 +1354,34 @@ PrefabInstance:
     - target: {fileID: 5783283928455214081, guid: 681da8d641bb8fc4eae88edfc25f8881, type: 3}
       propertyPath: m_Name
       value: LobbyPlayer 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802984879640270489, guid: 681da8d641bb8fc4eae88edfc25f8881, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802984879640270489, guid: 681da8d641bb8fc4eae88edfc25f8881, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802984879640270489, guid: 681da8d641bb8fc4eae88edfc25f8881, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 512674720}
+    - target: {fileID: 7802984879640270489, guid: 681da8d641bb8fc4eae88edfc25f8881, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802984879640270489, guid: 681da8d641bb8fc4eae88edfc25f8881, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReadyButtonPressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802984879640270489, guid: 681da8d641bb8fc4eae88edfc25f8881, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MPLobby, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802984879640270489, guid: 681da8d641bb8fc4eae88edfc25f8881, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 681da8d641bb8fc4eae88edfc25f8881, type: 3}
@@ -1513,6 +1574,34 @@ PrefabInstance:
     - target: {fileID: 5783283928455214081, guid: 681da8d641bb8fc4eae88edfc25f8881, type: 3}
       propertyPath: m_Name
       value: LobbyPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802984879640270489, guid: 681da8d641bb8fc4eae88edfc25f8881, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802984879640270489, guid: 681da8d641bb8fc4eae88edfc25f8881, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802984879640270489, guid: 681da8d641bb8fc4eae88edfc25f8881, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 512674720}
+    - target: {fileID: 7802984879640270489, guid: 681da8d641bb8fc4eae88edfc25f8881, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802984879640270489, guid: 681da8d641bb8fc4eae88edfc25f8881, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReadyButtonPressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802984879640270489, guid: 681da8d641bb8fc4eae88edfc25f8881, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MPLobby, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802984879640270489, guid: 681da8d641bb8fc4eae88edfc25f8881, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 681da8d641bb8fc4eae88edfc25f8881, type: 3}

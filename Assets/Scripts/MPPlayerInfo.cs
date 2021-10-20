@@ -2,7 +2,7 @@ using MLAPI.Serialization;
 using System;
 using UnityEngine.UI;
 
-public class MPPlayerInfo : MLAPI.Serialization.INetworkSerializable
+public struct MPPlayerInfo : MLAPI.Serialization.INetworkSerializable
 {
     public ulong networkClientId;
     public string networkPlayerName;
